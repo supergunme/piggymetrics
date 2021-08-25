@@ -15,6 +15,7 @@ import org.springframework.data.mongodb.core.convert.CustomConversions;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
+import org.springframework.tsf.annotation.EnableTsf;
 
 import java.util.Arrays;
 
@@ -23,6 +24,7 @@ import java.util.Arrays;
 @EnableOAuth2Client
 @EnableFeignClients
 @EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableTsf
 public class StatisticsApplication {
 
 	public static void main(String[] args) {
